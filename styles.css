@@ -34,7 +34,7 @@ hr{
 /* Text styling */
 .name{
     font-family: 'Dancing Script', cursive;
-    font-size: 450%;
+    font-size: 420%;
 }
 .padded{
     padding: 2rem 0;
@@ -70,11 +70,11 @@ hr{
   }
   .pink-section {
     background-color: #f8eeee;
-    padding: 2rem 8rem;
+    padding: 2vw 8vw;
   }
   .gray-section{
       background-color: #ddd;
-      padding: 2rem 8rem;
+      padding: 2vw 8vw;
   }
 
   /* Containers */
