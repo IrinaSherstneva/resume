@@ -1,0 +1,120 @@
+/* HTML elements*/
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1em;
+    color: #4d4646;
+}
+hr{
+    border: dotted 7px;
+    border-bottom: none;
+    text-align: center;
+    width: 6%;
+}
+
+/* Alignment padding */
+
+.aligned-center{
+    text-align: center;
+    
+}
+.no-padding{
+    padding: 0;
+}
+.custom-width{
+    width: -webkit-fill-available;
+    position: relative;
+    opacity: 0.2;
+}
+/*Button*/
+.btn{
+    margin: 3vw 0.5vw 1.7vw; 
+    width: fit-content;
+    font-family: 'Merriweather', serif;
+}
+/* Text styling */
+.name{
+    font-family: 'Dancing Script', cursive;
+    font-size: 400%;
+}
+.padded{
+    padding: 2rem 0;
+}
+.header{
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    
+}
+
+.text-block {
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    color: #fff;
+  }
+
+/* Sections */
+
+.top-section {
+  background: linear-gradient(0deg, rgba(10, 10, 10, 0.8), rgba(5, 5, 5, 0.6)), url("images/working.jpg");
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+    background-color: #5b5656;
+    padding: 0;
+  }
+  .pink{
+    color: #f8eeee;
+  }
+  .gray{
+      color: #ddd;
+  }
+  .pink-section {
+    background-color: #f8eeee;
+    padding: 2vw 8vw;
+    position: relative;
+  }
+  .gray-section{
+      background-color: #ddd;
+      padding: 2vw 8vw;
+      position: relative;
+  }
+
+  /* Nav items*/
+  .navbar{
+    padding: 0;
+  }
+  .navbar-nav{
+    margin: auto;
+  }
+  .nav-link{
+    margin: 0.8vw 5vw;
+    color: #b0a160;
+    font-size: 0.9rem;
+  }
+  .nav-color{
+      background-color: #fff;
+  }
+
+  /* Footer*/
+  .social-icon {
+    margin: 20px 10px;
+    color: #fff;
+  }
+  .social-icon:hover{
+      color: #ffd5e5;
+  }
+  .footer{
+    color: gray;
+    font-size: small;
+    background-color: #ddd;
+    padding: 0.4vw;
+    margin: 0;
+  }
+  /*Projects*/
+    .card{
+    margin: 3vw auto;
+    padding: 0;
+    }
