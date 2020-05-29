@@ -49,7 +49,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-12 col-sm-12 text-block">
                                 <h1 class="name">Irina Sherstneva</h1>
-                                <h6 class="header">Full Stack Developer</h6>
+                                <h6 class="job-title">Full Stack Developer</h6>
                                 <button class="btn btn-outline-light btn-lg" type="submit" onclick="window.open('images/CV_Sherstneva_Irina_En.pdf')">Resume EN</button>
                                 <button class="btn btn-outline-light btn-lg" type="submit" onclick="window.open('images/CV_Sherstneva_Irina_Ru.pdf')">Resume RU</button>
                                 <div>
@@ -94,34 +94,79 @@
             <h4 class="header padded">Projects</h4>
             <div class="row">
 
-                    <div class="card aligned-center col-lg-3">
-                        <div class="card-header">
-                            DRAW
+                <div id="films" class="project aligned-center col-lg-3" onmouseover="show(this)" onmouseout="hide(this)">
+                    <div class="content">
+                        <div class="project-header aligned-center text-warning">
+                        <h3>FILM FINDER</h3>
                         </div>
-                        <div class="card-body">
-                            <p>A paint-like application made in React</p>
-                            <a href="https://github.com/IrinaSherstneva/draw" class="btn btn-outline-secondary">Link to the project</a> 
-                        </div>
+                    <div class="info">
+                        <p>Film finder implemented in React Native using OMDb API</p>
+                        <a href="https://github.com/IrinaSherstneva/imdbFinder" class="btn btn-outline-warning">Link to the project</a> 
                     </div>
+                </div>
+                </div>
 
-                    <div class="card aligned-center col-lg-3">
-                        <div class="card-header aligned-center">
-                            POMODORO TIMER
+                <div id='contacts' class="project aligned-center col-lg-3" onmouseover="show(this)" onmouseout="hide(this)">
+                    <div class="content">
+                    <div class="project-header aligned-center text-warning">
+                        <h3>CONTACTS</h3>
+                    </div>
+                    <div class="info">
+                        <p>An app showing person's contacts after they logged (React Native)</p>
+                        <a href="https://github.com/IrinaSherstneva/contactsApp" class="btn btn-outline-warning">Link to the project</a> 
+                    </div>
+                </div>
+                </div>
+
+                <div id="draw" class="project aligned-center col-lg-3" onmouseover="show(this)" onmouseout="hide(this)">
+                    <div class="content">
+                        <div class="project-header aligned-center text-warning">
+                        <h3>DRAW</h3>
+                    </div>
+                    <div class="info">
+                        <p>A paint-like web application made in React</p>
+                        <a href="https://github.com/IrinaSherstneva/draw" class="btn btn-outline-warning">Link to the project</a> 
+                    </div>
+                    </div>
+                </div>
+
+        </div>
+            <div class="row">
+
+                    <div id="timer" class="project aligned-center col-lg-3" onmouseover="show(this)" onmouseout="hide(this)">
+                        <div class="content">
+                            <div class="project-header aligned-center text-warning">
+                            <h3>POMODORO TIMER</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="info">
                             <p>Pomodoro Timer for Android in React Native</p>
-                            <a href="https://github.com/IrinaSherstneva/PomodoroTimer" class="btn btn-outline-secondary">Link to the project</a> 
+                            <a href="https://github.com/IrinaSherstneva/PomodoroTimer" class="btn btn-outline-warning">Link to the project</a> 
+                        </div>
                         </div>
                     </div>
 
 
-                    <div class="card aligned-center col-lg-3">
-                        <div class="card-header aligned-center">
-                            AIRINFO APP
+                    <div id='airinfo' class="project aligned-center col-lg-3" onmouseover="show(this)" onmouseout="hide(this)">
+                        <div class="content">
+                            <div class="project-header aligned-center text-warning">
+                            <h3>AIRINFO APP</h3>
                         </div>
-                        <div class="card-body">
-                            <p>A web app for airline employees made in Java using Spring Boot, Hibernate, PrimeFaces (coursework implemented with another student)</p>
-                            <a href="https://github.com/IrinaSherstneva/airlineApp" class="btn btn-outline-secondary">Link to the project</a> 
+                        <div class="info">
+                            <p>Back end app for airline employees - coursework implemented with another student (Java, Spring Boot, Hibernate, PrimeFaces)</p>
+                            <a href="https://github.com/IrinaSherstneva/airlineApp" class="btn btn-outline-warning">Link to the project</a> 
+                        </div>
+                        </div>
+                    </div>
+
+                    <div id='todo' class="project aligned-center col-lg-3" onmouseover="show(this)" onmouseout="hide(this)">
+                        <div class="content">
+                            <div class="project-header aligned-center text-warning">
+                            <h3>TO DO</h3>
+                        </div>
+                        <div class="info">
+                            <p>I am working on it...</p>
+                            <a href="" class="btn btn-outline-warning">Link to the project</a> 
+                        </div>
                         </div>
                     </div>
 
@@ -179,7 +224,7 @@
         <ul>
             <li>Translating and proofreading credit agreements with foreign banks</li>
             <li>Working in team to prepare loan agreements for signing within the predefined deadlines</li>
-            <li>Comunicating with Asian, European and American financial institutions over phone and emails</li>
+            <li>Communicating with Asian, European and American financial institutions over phone and emails</li>
         </ul>
 
     </section>
@@ -187,6 +232,19 @@
           <p class="footer">© Copyright 2020 Irina Sherstneva</p>
       </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+function show(object) {
+    console.log(object.id)
+    object.querySelector("div[class='info']").style.visibility = "visible";
+    object.querySelector("div[class='content']").style.background = 'rgba(14, 35, 51, 0.8)';
+    // 'rgba(210, 182, 182, 0.7)';
+}
+
+function hide(object) {
+    object.querySelector("div[class='info']").style.visibility = "hidden";
+    object.querySelector("div[class='content']").style.background = 'none';
+}
+
+    </script>
 </body>
 </html>
