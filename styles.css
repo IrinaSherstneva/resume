@@ -58,6 +58,7 @@ nav .navbar-nav li a{
   border-radius: 20px;
   margin: 2vw auto;
   padding: 0 20px;
+  height: 350px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -150,6 +151,7 @@ nav .navbar-nav li a{
 .text-block {
   position: absolute;
   bottom: 25px;
+  left: 4vw;
   text-align: center;
   color: #fff;
 }
