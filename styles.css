@@ -135,7 +135,7 @@ nav .navbar-nav li a{
 
 /* Top Section */
 .top-section {
-  background: linear-gradient(0deg, rgba(21, 19, 19, 1), rgba(255, 255, 255, 0.1)), url("images/laptop.jpg");
+  background: linear-gradient(0deg, rgba(21, 19, 19, 1), rgba(255, 255, 255, 0.1)), url("images/laptopMin.jpg");
   /* rgba(151, 90, 103, 1) */
   height: 650px;
   width: 100%;
