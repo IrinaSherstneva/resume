@@ -3,6 +3,10 @@ body{
     font-family: 'Karla', sans-serif;
     font-size: 1.2em;
     color: #4d4646;
+    height: 100%;
+}
+html{
+  height: 100%;
 }
 hr{
     border: dotted 7px;
@@ -22,15 +26,19 @@ hr{
 }
 
 /* Nav items*/
-.navbar{
-  padding: 0;
+/* .navbar{
+  z-index: 2;
+  position: absolute;
+  background-color: white;
 }
 nav .navbar-nav li a{
   color: grey !important;
   font-family: 'Karla', sans-serif;
 }
-.navbar-nav{
-  margin: auto;
+.navbar-expand-lg{
+  padding: 0;
+  margin: 16px;
+  min-width: 48px;
 }
 
 .nav-link{
@@ -39,20 +47,57 @@ nav .navbar-nav li a{
   letter-spacing: 0.2em;
   text-transform: lowercase;
   font-weight: bold;
+} */
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 40px;
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  background-color: white;
+ -webkit-transform: translate(-300px, 0);
+  transform: translate(-300px, 0);
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
 }
-.nav-color{
-    background-color: #fff;
+nav.open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
-
+#drawer a{
+  padding: 1.2em 40px;
+  color: #111;
+}
+#menu{
+  z-index: 1;
+  position: absolute;
+  min-width: 48px;
+  min-height: 48px;
+  left: 20px;
+  top: 20px;
+}
 /*Projects*/
 
 .btn{
-    margin: 1.5vw 0.5vw 1.5vw; 
-    width: fit-content;
+    margin: 10px; 
+    min-width: 48px;
+    min-height: 48px;
     font-family: 'Karla', serif;
     border-radius: 12px;
-    color: #fff;
-    background-color: #3449;
+    color: #dacacd;
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+    background-color: #A28089;
+    
 }
 .project{
   border-radius: 20px;
@@ -135,26 +180,30 @@ nav .navbar-nav li a{
 
 /* Top Section */
 .top-section {
-  background: linear-gradient(0deg, rgba(21, 19, 19, 1), rgba(255, 255, 255, 0.1)), url("images/laptopMin.jpg");
-  /* rgba(151, 90, 103, 1) */
-  height: 650px;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.5;
-    background-color: #5b5656;
-    padding: 0;
+  background: linear-gradient(180deg, #4a6163, #b1a6a4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
   }
 .name{
     font-family: 'Dancing Script', cursive;
     font-size: 400%;
 }
+.row{
+  padding-top: 30%;
+  align-items: flex-end;
+}
 .text-block {
-  position: absolute;
-  bottom: 25px;
-  left: 4vw;
   text-align: center;
-  color: #fff;
+  color: #d8c797;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: inherit;
 }
 
 /* Other Sections */
@@ -164,7 +213,7 @@ nav .navbar-nav li a{
 .header{
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 0.2em;
-    color: #7d5a5a;
+    color: #45A29E;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -176,18 +225,18 @@ nav .navbar-nav li a{
 }
   .pink{
     /* color: #f8eeee; */
-    color: rgba(151, 90, 103, 0.5)
+    color: rgba(151, 90, 103, 0.5);
   }
   .gray{
       color: #A19A9A;
   }
   .pink-section {
-    background-color: #f8eeee;
+    background-color: #fff;
     padding: 4vw 8vw;
     position: relative;
   }
   .gray-section{
-      background-color:rgba(235,233,233,1);
+      background-color:#A28089;
       padding: 4vw 8vw;
       position: relative;
   }

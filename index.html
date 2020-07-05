@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light nav-color">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light nav-color">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,24 +55,43 @@
                 </li>
             </ul>
         </div>
+    </nav> -->
+    <nav id="drawer">
+       
+                <a class="nav-link" href="#about">About</a>
+           
+                <a class="nav-link" href="#skills">Skills</a>
+            
+                <a class="nav-link" href="#projects">Projects</a>
+           
+                <a class="nav-link" href="#education">Education</a>
+           
+                <a class="nav-link" href="#work">Experience</a>
+           
     </nav>
+    <a id="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path style="fill:#fff;" d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+          </svg>
+    </a>
     <section class="top-section">
         <!-- <img class="custom-width" src="images/working.jpg" alt="Photo of PC"> -->
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-sm-12 text-block">
+        <div class="row text-block">
                 <h1 class="name">Irina Sherstneva</h1>
-                <h6 class="job-title">Full Stack Developer</h6>
-                <button class="btn btn-outline-light btn-lg" type="submit"
-                    onclick="window.open('images/CV_Sherstneva_Irina_En.pdf')">Resume EN</button>
-                <button class="btn btn-outline-light btn-lg" type="submit"
-                    onclick="window.open('images/CV_Sherstneva_Irina_Ru.pdf')">Resume RU</button>
+                <h6 class="job-title">Software Developer</h6>
+                <div>
+                <button class="btn btn-lg" type="submit"
+                    onclick="window.open('images/CV_Sherstneva_Irina_En.pdf')">RESUME EN</button>
+                <button class="btn btn-lg" type="submit"
+                    onclick="window.open('images/CV_Sherstneva_Irina_Ru.pdf')">RESUME RU</button>
+                </div>
                 <div>
                     <a href="https://github.com/IrinaSherstneva"><i class="social-icon fab fa-2x fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/irina-sherstneva-24b933121/"><i
                             class="social-icon fab fa-2x fa-linkedin"></i></a>
                     <!-- <a href="https://www.instagram.com/irina07scw/" target="_new"><i class="social-icon fab fa-2x fa-instagram"></i></a> -->
                     <a href="mailto:irina07scw@gmail.com"><i class="social-icon fas fa-2x fa-envelope"></i></a>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -277,6 +296,22 @@
             object.querySelector("div[class='info']").style.visibility = "hidden";
             object.querySelector("div[class='content']").style.background = 'none';
         }
+        
+        /*
+         * Open the drawer when the menu ison is clicked.
+         */
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('body');
+        var drawer = document.querySelector('#drawer');
+  
+        menu.addEventListener('click', function(e) {
+          e.stopPropagation();
+          drawer.classList.toggle('open');
+          
+        });
+        main.addEventListener('click', function() {
+          drawer.classList.remove('open');
+        });
 
     </script>
 </body>
