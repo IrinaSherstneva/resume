@@ -1,6 +1,6 @@
 /* HTML elements*/
 body{
-    font-family: 'Karla', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
     color: #4d4646;
     height: 100%;
@@ -39,7 +39,7 @@ nav {
   position: absolute;
   z-index: 2;
   height: 100%;
-  background-color: white;
+  background-color: #b1a6a4;
  -webkit-transform: translate(-300px, 0);
   transform: translate(-300px, 0);
   transition: transform 0.3s ease;
@@ -47,14 +47,21 @@ nav {
   -moz-transition: transform 0.3s ease;
   -ms-transition: transform 0.3s ease;
   -o-transition: transform 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 nav.open {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
 }
 #drawer a{
-  padding: 1.2em 40px;
-  color: #111;
+  padding: 2em 40px;
+  color: #4a6163;
+  font-size: 1rem;
 }
 #menu{
   z-index: 1;
@@ -69,7 +76,7 @@ nav.open {
   min-width: 48px;
   min-height: 48px;
   border-radius: 12px;
-  color: #fff;
+  color: #faf8f1;
   font-weight: bold;
   font-size: 0.7em;
   letter-spacing: 1px;
@@ -107,14 +114,17 @@ nav.open {
 }
 .social-icon {
   margin: 20px 10px;
-  color: #fff;
+  color: #faf8f1;
 }
 .social-icon:hover{
-    color: #ffd5e5;
+    color: #6e8182;
 }
 /*Projects*/
 #projects{
   padding: 4vw 0;
+}
+#projects .btn{
+  background-color: #4a6163;
 }
 .carousel-item{
   height: 500px;
@@ -134,8 +144,8 @@ nav.open {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
   font-weight: bold;
+  color: #faf8f1;
 }
 .carousel-caption h4{
 font-weight: bolder;
@@ -157,24 +167,24 @@ padding-bottom: 2vh;
     padding: 2rem 0;
 }
 .header{
-    font-family: 'Work Sans', sans-serif;
-    letter-spacing: 0.2em;
+    
+    letter-spacing: 2px;
     color: #4a6163;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 .job-title{
-  font-family: 'Merriweather', serif;
-  letter-spacing: 0.2em;
+  /* font-family: 'Merriweather', serif; */
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #fff
+  color: #faf8f1
 }
 
   .dark-section {
     background-color: #A28089;
     padding: 4vw 8vw;
     position: relative;
-    color: #fff;
+    color: #faf8f1;
   }
   .dark-section h4{
     color: #d8c797;
@@ -195,4 +205,5 @@ padding-bottom: 2vh;
   }
   footer p{
     margin: 0;
+    font-size: 0.9rem;
   }

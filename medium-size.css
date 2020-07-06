@@ -1,5 +1,19 @@
-@media screen and (min-width: 700px){
-    .top-section {
-        
-    }
+@media screen and (min-width: 840px){
+    nav {
+       flex-direction: row;
+       justify-content: space-evenly;
+       width: 100%;
+       height: 20%;
+       -webkit-transform: translate(0, 0);
+       transform: translate(0, 0);
+       background-color: transparent;
+       font-size: 1.1rem;
+       padding-top: 10px;
+      }
+      #drawer a{
+        color: #263232;
+      }
+      #menu{
+          visibility: hidden;
+      }
 }
