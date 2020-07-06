@@ -52,7 +52,7 @@
     </a>
     <section class="top-section">
         <!-- <img class="custom-width" src="images/working.jpg" alt="Photo of PC"> -->
-        <div class="row text-block">
+        <div class="text-block">
                 <h1 class="name">Irina Sherstneva</h1>
                 <h6 class="job-title">Software Developer</h6>
                 <div>
@@ -92,7 +92,7 @@
                 <li>Git</li>
             </ul>
             <br>
-            <hr class="pink"><br>
+            <hr><br>
             <ul>
                 <li>Russian: native</li>
                 <li>English: proficient</li>
@@ -105,98 +105,48 @@
     <section id="projects" class="light-section">
         <div class="container-fluid">
             <h4 class="header padded">Projects</h4>
-            <div class="row">
-
-                <div id="films" class="project aligned-center col-lg-3 col-md-5" onmouseover="show(this)"
-                    onmouseout="hide(this)">
-                    <div class="content">
-                        <div class="project-header aligned-center ">
-                            <h3>FILM FINDER</h3>
-                        </div>
-                        <div class="info">
-                            <p>Film finder implemented in React Native using OMDb API</p>
-                            <a href="https://github.com/IrinaSherstneva/imdbFinder" class="btn btn-outline-light">Link
-                                to the project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id='contacts' class="project aligned-center col-lg-3 col-md-5" onmouseover="show(this)"
-                    onmouseout="hide(this)">
-                    <div class="content">
-                        <div class="project-header aligned-center ">
-                            <h3>CONTACTS</h3>
-                        </div>
-                        <div class="info">
-                            <p>Login and contacts page (React Native)</p>
-                            <a href="https://github.com/IrinaSherstneva/contactsApp" class="btn btn-outline-light">Link
-                                to the project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="draw" class="project aligned-center col-lg-3 col-md-5" onmouseover="show(this)"
-                    onmouseout="hide(this)">
-                    <div class="content">
-                        <div class="project-header aligned-center ">
-                            <h3>DRAW</h3>
-                        </div>
-                        <div class="info">
-                            <p>A paint-like web application made in React</p>
-                            <a href="https://github.com/IrinaSherstneva/draw" class="btn btn-outline-light">Link to the
-                                project</a>
-                        </div>
-                    </div>
-                </div>
-
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div id="plane" class="carousel-item active">
+                <div class="carousel-caption d-md-block">
+                    <h4>AIRINFO APP</h4>
+                    <p>Back end app for airline employees - coursework implemented with another student (Java,
+                        Spring Boot, Hibernate, PrimeFaces)</p>
+                    <a href="https://github.com/IrinaSherstneva/airlineApp" class="btn">GitHub Link</a>
+                  </div>
+              </div>
+              <div id="timer" class="carousel-item">
+                <div class="carousel-caption d-md-block">
+                    <h4>POMODORO TIMER</h4>
+                    <p>Pomodoro Timer for Android in React Native</p>
+                    <a href="https://github.com/IrinaSherstneva/PomodoroTimer"
+                        class="btn">GitHub Link</a>
+                  </div>
+              </div>
+              <div id="films" class="carousel-item">
+                <div class="carousel-caption d-md-block">
+                    <h4>FILM FINDER APP</h4>
+                        <p>Film finder implemented in React Native using OMDb API</p>
+                        <a href="https://github.com/IrinaSherstneva/imdbFinder" class="btn">GitHub Link</a>
+                    
+              </div>
             </div>
-            <div class="row">
-
-                <div id="timer" class="project aligned-center col-lg-3 col-md-5" onmouseover="show(this)"
-                    onmouseout="hide(this)">
-                    <div class="content">
-                        <div class="project-header aligned-center">
-                            <h3>POMODORO TIMER</h3>
-                        </div>
-                        <div class="info">
-                            <p>Pomodoro Timer for Android in React Native</p>
-                            <a href="https://github.com/IrinaSherstneva/PomodoroTimer"
-                                class="btn btn-outline-light">Link to the project</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id='airinfo' class="project aligned-center col-lg-3 col-md-5" onmouseover="show(this)"
-                    onmouseout="hide(this)">
-                    <div class="content">
-                        <div class="project-header aligned-center">
-                            <h3>AIRINFO APP</h3>
-                        </div>
-                        <div class="info">
-                            <p>Back end app for airline employees - coursework implemented with another student (Java,
-                                Spring Boot, Hibernate, PrimeFaces)</p>
-                            <a href="https://github.com/IrinaSherstneva/airlineApp" class="btn btn-outline-light">Link
-                                to the project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id='todo' class="project aligned-center col-lg-3 col-md-5" onmouseover="show(this)"
-                    onmouseout="hide(this)">
-                    <div class="content">
-                        <div class="project-header aligned-center">
-                            <h3>PROJECT</h3>
-                        </div>
-                        <div class="info">
-                            <p>Coming soon</p>
-                            <a href="" class="btn btn-outline-light">Link to the project</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
+       
     </section>
     <section id="education" class="dark-section">
         <div class="container-fluid">
@@ -219,14 +169,14 @@
                 </ul>
             </div>
             <br>
-            <hr class="pink"><br>
+            <hr><br>
             <div id="msu">
                 <p>2008-2013</p>
                 <p><b>Lomonosov Moscow State University (Russia)</b></p>
                 <p>MA in Linguistics with Excellence</p>
             </div>
             <br>
-            <hr class="pink"><br>
+            <hr><br>
             <div id="scw">
                 <p>2006-2007</p>
                 <p><b> St Charles West High School (MO, USA)</b></p>
@@ -245,7 +195,7 @@
             <li>Translating and proofreading website contents</li>
         </ul>
         <br>
-        <hr class="gray"><br>
+        <hr><br>
         <p>2013 - 2017</p>
         <p><b>Vnesheconombank</b></p>
         <p>Expert</p>
@@ -261,17 +211,6 @@
     </footer>
 
     <script>
-        function show(object) {
-            console.log(object.id)
-            object.querySelector("div[class='info']").style.visibility = "visible";
-            object.querySelector("div[class='content']").style.background = 'rgba(14, 35, 51, 0.8)';
-            // 'rgba(210, 182, 182, 0.7)';
-        }
-
-        function hide(object) {
-            object.querySelector("div[class='info']").style.visibility = "hidden";
-            object.querySelector("div[class='content']").style.background = 'none';
-        }
         
         /*
          * Open the drawer when the menu ison is clicked.
