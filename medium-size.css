@@ -19,4 +19,7 @@
       body{
         font-size: 1.3em;
     }
+    .w-70{
+    width: 70%;
+    }
 }

@@ -18,6 +18,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Dancing+Script:wght@700&family=Karla:wght@400;700&Work+Sans:wght@500&family=Merriweather+Sans:wght@300&display=swap"
         rel="stylesheet">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -32,54 +34,54 @@
 </head>
 
 <body>
-    <nav id="drawer">
-       
-                <a class="nav-link" href="#about">About</a>
-           
-                <a class="nav-link" href="#skills">Skills</a>
-            
-                <a class="nav-link" href="#projects">Projects</a>
-           
-                <a class="nav-link" href="#education">Education</a>
-           
-                <a class="nav-link" href="#work">Experience</a>
-           
+    <nav id="drawer" class="d-flex">
+
+        <a class="nav-link" href="#about">About</a>
+
+        <a class="nav-link" href="#skills">Skills</a>
+
+        <a class="nav-link" href="#projects">Projects</a>
+
+        <a class="nav-link" href="#education">Education</a>
+
+        <a class="nav-link" href="#work">Experience</a>
+
     </nav>
     <a id="menu">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path style="fill:#fff;" d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
-          </svg>
+            <path style="fill:#faf8f1;" d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+        </svg>
     </a>
     <section class="top-section">
         <!-- <img class="custom-width" src="images/working.jpg" alt="Photo of PC"> -->
-        <div class="text-block">
-                <h1 class="name">Irina Sherstneva</h1>
-                <h5 class="job-title">Software Developer</h5>
-                <div>
-                <button class="btn btn-lg" type="submit"
-                    onclick="window.open('images/Irina-SWdeveloper.pdf')">RESUME EN</button>
-                <button class="btn btn-lg" type="submit"
+        <div class="text-block d-flex flex-column">
+            <h1 class="name">Irina Sherstneva</h1>
+            <h5 class="job-title">Software Developer</h5>
+            <div>
+                <button class="btn justify-content-center" type="submit" onclick="window.open('images/Irina-SWdeveloper.pdf')">RESUME
+                    EN</button>
+                <button class="btn justify-content-center" type="submit"
                     onclick="window.open('images/CV_Sherstneva_Irina_Ru.pdf')">RESUME RU</button>
-                </div>
-                <div>
-                    <a href="https://github.com/IrinaSherstneva"><i class="social-icon fab fa-2x fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/irina-sherstneva-24b933121/"><i
-                            class="social-icon fab fa-2x fa-linkedin"></i></a>
-                    <!-- <a href="https://www.instagram.com/irina07scw/" target="_new"><i class="social-icon fab fa-2x fa-instagram"></i></a> -->
-                    <a href="mailto:irina07scw@gmail.com"><i class="social-icon fas fa-2x fa-envelope"></i></a>
-                
+            </div>
+            <div>
+                <a href="https://github.com/IrinaSherstneva"><i class="social-icon fab fa-2x fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/irina-sherstneva-24b933121/"><i
+                        class="social-icon fab fa-2x fa-linkedin"></i></a>
+                <a href="mailto:irina07scw@gmail.com"><i class="social-icon fas fa-2x fa-envelope"></i></a>
+
             </div>
         </div>
     </section>
     <section id="about" class="light-section">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex flex-column" data-aos="zoom-in" data-aos-duration="900">
             <h4 class="header padded">About</h4>
             <p>Hi! My name is Irina. I am a full-stack web developer. </p>
         </div>
     </section>
     <section id="skills" class="dark-section">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex flex-column" data-aos="fade-up" data-aos-duration="1500">
             <h4 class="header padded">Skills</h4>
+            <div class="d-flex">
             <ul>
                 <li>HTML & CSS & Javascript</li>
                 <li>NodeJS & Express & Mongoose</li>
@@ -91,6 +93,18 @@
                 <li>Design Patterns</li>
                 <li>Git</li>
             </ul>
+            <ul>
+                <li>HTML & CSS & Javascript</li>
+                <li>NodeJS & Express & Mongoose</li>
+                <li>React</li>
+                <li>Java & Spring Framework</li>
+                <li>C</li>
+                <li>Haskell</li>
+                <li>PostgreSQL</li>
+                <li>Design Patterns</li>
+                <li>Git</li>
+            </ul>
+        </div>
             <br>
             <hr><br>
             <ul>
@@ -103,55 +117,55 @@
         </div>
     </section>
     <section id="projects" class="light-section">
-        <div class="container-fluid">
-            <h4 class="header padded">Projects</h4>
+
+        <h4 class="header padded">Projects</h4>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-              <div id="plane" class="carousel-item active">
-                <div class="carousel-caption d-md-block">
-                    <h4>AIRINFO APP</h4>
-                    <p>Back end app for airline employees - coursework implemented with another student (Java,
-                        Spring Boot, Hibernate, PrimeFaces)</p>
-                    <a href="https://github.com/IrinaSherstneva/airlineApp" class="btn">GitHub Link</a>
-                  </div>
-              </div>
-              <div id="timer" class="carousel-item">
-                <div class="carousel-caption d-md-block">
-                    <h4>POMODORO TIMER</h4>
-                    <p>Pomodoro Timer for Android in React Native</p>
-                    <a href="https://github.com/IrinaSherstneva/PomodoroTimer"
-                        class="btn">GitHub Link</a>
-                  </div>
-              </div>
-              <div id="films" class="carousel-item">
-                <div class="carousel-caption d-md-block">
-                    <h4>FILM FINDER APP</h4>
+                <div id="plane" class="carousel-item active">
+                    <div class="carousel-caption d-flex flex-column">
+                        <h4>AIRINFO APP</h4>
+                        <p>Back end app for airline employees - coursework implemented with another student (Java,
+                            Spring Boot, Hibernate, PrimeFaces)</p>
+                        <a href="https://github.com/IrinaSherstneva/airlineApp" class="btn justify-content-center">GitHub Link</a>
+                    </div>
+                </div>
+                <div id="timer" class="carousel-item">
+                    <div class="carousel-caption d-flex flex-column">
+                        <h4>POMODORO TIMER</h4>
+                        <p>Pomodoro Timer for Android in React Native</p>
+                        <a href="https://github.com/IrinaSherstneva/PomodoroTimer" class="btn justify-content-center">GitHub Link</a>
+                    </div>
+                </div>
+                <div id="films" class="carousel-item">
+                    <div class="carousel-caption d-flex flex-column">
+                        <h4>FILM FINDER APP</h4>
                         <p>Film finder implemented in React Native using OMDb API</p>
-                        <a href="https://github.com/IrinaSherstneva/imdbFinder" class="btn">GitHub Link</a>
-                    
-              </div>
+                        <a href="https://github.com/IrinaSherstneva/imdbFinder" class="btn justify-content-center">GitHub Link</a>
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-       
+
+
     </section>
     <section id="education" class="dark-section">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex flex-column">
             <h4 class="header padded">Education</h4>
-            <div id="uibk">
+            <div class="w-50">
+            <div id="uibk" data-aos="fade-right" data-aos-duration="900">
                 <p>2018-2020</p>
                 <p><b> University of Innsbruck (Austria)</b></p>
                 <p>82 ECTS in Computer Science and Math (41 US credits)</p>
@@ -167,77 +181,87 @@
                     <li>Discrete Math</li>
                     <li>Linear Algebra</li>
                 </ul>
+            
             </div>
             <br>
             <hr><br>
-            <div id="msu">
+            <div id="msu" data-aos="fade-right" data-aos-duration="900">
                 <p>2008-2013</p>
                 <p><b>Lomonosov Moscow State University (Russia)</b></p>
                 <p>MA in Linguistics with Excellence</p>
             </div>
             <br>
             <hr><br>
-            <div id="scw">
+            <div id="scw" data-aos="fade-right" data-aos-duration="900">
                 <p>2006-2007</p>
                 <p><b> St Charles West High School (MO, USA)</b></p>
                 <p>Exchange Student, GPA 4.0</p>
                 <p>Medals in AP Calculus and AP Physics</p>
             </div>
         </div>
+    </div>
     </section>
     <section id="work" class="light-section">
-        <h4 class="header padded">Work Experience</h4>
-        <p>2020 - present</p>
-        <p><b>Freelance</b></p>
-        <p>Software Developer</p>
-        <ul>
-            <li>Designed and developed frontend for a single-page application in React</li>
-            <li>Worked with React Router and Styled Components</li>
-            <li>Implemented validation for different types of user input</li>
-            <li>Used API Gateway for API requests / responses</li>
-        </ul>
-        <br>
-        <hr><br>
-        <p>2017</p>
-        <p><b>Mike Credit</b></p>
-        <p>SEO Copywriter</p>
-        <ul>
-            <li>Writing SEO texts for websites</li>
-            <li>Translating and proofreading website contents</li>
-        </ul>
-        <br>
-        <hr><br>
-        <p>2013 - 2017</p>
-        <p><b>Vnesheconombank</b></p>
-        <p>Expert</p>
-        <ul>
-            <li>Translating and proofreading credit agreements with foreign banks</li>
-            <li>Working in team to prepare loan agreements for signing within the predefined deadlines</li>
-            <li>Communicating with Asian, European and American financial institutions over phone and emails</li>
-        </ul>
-
+        <div class="container-fluid d-flex flex-column">
+            <div class="w-70">
+                <h4 class="header padded">Work Experience</h4>
+                <p>2020 - present</p>
+                <p><b>Freelance</b></p>
+                <p>Software Developer</p>
+                <ul>
+                    <li>Designed and developed frontend for a single-page application in React</li>
+                    <li>Worked with React Router and Styled Components</li>
+                    <li>Implemented validation for different types of user input</li>
+                    <li>Used API Gateway for API requests / responses</li>
+                </ul>
+                <br>
+                <hr><br>
+                <p>2017</p>
+                <p><b>Mike Credit</b></p>
+                <p>SEO Copywriter</p>
+                <ul>
+                    <li>Writing SEO texts for websites</li>
+                    <li>Translating and proofreading website contents</li>
+                </ul>
+                <br>
+                <hr><br>
+                <p>2013 - 2017</p>
+                <p><b>Vnesheconombank</b></p>
+                <p>Expert</p>
+                <ul>
+                    <li>Translating and proofreading credit agreements with foreign banks</li>
+                    <li>Working in team to prepare loan agreements for signing within the predefined deadlines</li>
+                    <li>Communicating with Asian, European and American financial institutions over phone and emails
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
     <footer>
-        <p >© Copyright <script>document.write(new Date().getFullYear())</script> Irina Sherstneva</p>
+        <p>© Copyright
+            <script>document.write(new Date().getFullYear())</script> Irina Sherstneva</p>
     </footer>
     <script>
-        
         /*
          * Open the drawer when the menu ison is clicked.
          */
         var menu = document.querySelector('#menu');
         var main = document.querySelector('body');
         var drawer = document.querySelector('#drawer');
-  
-        menu.addEventListener('click', function(e) {
-          e.stopPropagation();
-          drawer.classList.toggle('open');
-          
+
+        menu.addEventListener('click', function (e) {
+            e.stopPropagation();
+            drawer.classList.toggle('open');
+
         });
-        main.addEventListener('click', function() {
-          drawer.classList.remove('open');
+        main.addEventListener('click', function () {
+            drawer.classList.remove('open');
         });
 
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
