@@ -188,6 +188,17 @@ padding-bottom: 2vh;
   .skills{
     flex-direction: column;
   }
+  .dark-section ul{
+    list-style-type: none;
+  }
+  .dark-section ul li::before {
+    content: "\25CF";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #d8c797; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 2rem; /* Also needed for space (tweak if needed) */
+    margin-left: -2.1rem; /* Also needed for space (tweak if needed) */
+  }
 
   /* Footer*/
 
