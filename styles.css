@@ -194,6 +194,9 @@ padding-bottom: 2vh;
       background-color:#fff;
       padding: 4vw 8vw;   
   }
+  .skills{
+    flex-direction: column;
+  }
 
   /* Footer*/
 

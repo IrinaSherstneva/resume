@@ -19,7 +19,16 @@
       body{
         font-size: 1.3em;
     }
-    .w-70{
+    .wid-50{
+        width: 50%;
+        }
+    .wid-70{
     width: 70%;
     }
+    #skills hr{
+       visibility: hidden;
+    }
+    .skills{
+        flex-direction: row;
+      }
 }
