@@ -81,7 +81,6 @@ nav.open {
   background-color: #A28089;
   text-transform: uppercase;
   display: inline-flex;
-  align-items: center;
 }
 .btn:hover{
   background-color: #82666e;
@@ -93,8 +92,6 @@ nav.open {
   background: linear-gradient(180deg, #4a6163, #b1a6a4);
     height: 100%;
     width: 100%;
-    align-items: center;
-    justify-content: flex-end;
   }
 .name{
     font-family: 'Dancing Script', cursive;
@@ -111,7 +108,6 @@ nav.open {
   text-align: center;
   color: #d8c797;
   justify-content: space-evenly;
-  align-items: center;
   height: inherit;
 }
 .social-icon {
@@ -148,8 +144,6 @@ nav.open {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  justify-content: space-between;
-  align-items: center;
   font-weight: bold;
   color: #faf8f1;
 }
@@ -169,10 +163,7 @@ padding-bottom: 2vh;
 
 
 /* Other Sections */
-.container-fluid{
-  justify-content: center;
-  align-items: center;
-}
+
 .padded{
     padding: 2rem 0;
 }
